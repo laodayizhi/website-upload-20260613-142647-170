@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <meta name="robots" content="index,follow">
+  <title>搜索影片 - 日韩影视网</title>
+  <meta name="description" content="搜索日韩影视网影片，按片名、类型、地区、年份、标签查找电影和剧集。">
+  <meta name="keywords" content="经典日韩电影,在线观看,免费观看,日韩影视,日韩电视剧,高清视频,影视大全,免费播放,动人故事,视听盛宴,搜索,影片搜索">
+  <link rel="stylesheet" href="./assets/css/original.css">
+  <link rel="stylesheet" href="./assets/css/site.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-main">
+      <a class="site-logo" href="./index.html" aria-label="日韩影视网">
+          <span class="logo-mark">影</span>
+          <span class="logo-text">日韩影视网</span>
+        </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a class="nav-link" href="./index.html">首页</a>
+        <a class="nav-link" href="./categories.html">分类</a>
+        <a class="nav-link" href="./rankings.html">排行榜</a>
+        <a class="nav-link" href="./category-visual-feast.html">视听盛宴</a>
+          <a class="nav-link" href="./category-story-world.html">动人故事</a>
+          <a class="nav-link" href="./category-new-release.html">年度新片</a>
+          <a class="nav-link" href="./category-classic-light.html">经典回看</a>
+          </nav>
+      <form class="header-search" action="./search.html" data-search-form>
+        <input type="search" name="q" placeholder="搜索片名、类型、地区" aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-label="展开导航">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" data-mobile-menu>
+      <a class="mobile-link" href="./index.html">首页</a>
+      <a class="mobile-link" href="./categories.html">分类</a>
+      <a class="mobile-link" href="./rankings.html">排行榜</a>
+      <a class="mobile-link" href="./category-visual-feast.html">视听盛宴</a>
+        <a class="mobile-link" href="./category-story-world.html">动人故事</a>
+        <a class="mobile-link" href="./category-new-release.html">年度新片</a>
+        <a class="mobile-link" href="./category-classic-light.html">经典回看</a>
+        <form class="mobile-search" action="./search.html" data-search-form>
+        <input type="search" name="q" placeholder="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero compact" data-search-page>
+    <span class="eyebrow">Search</span>
+    <h1>搜索影片</h1>
+    <p>输入片名、类型、地区、年份或标签，快速查找感兴趣的影视内容。</p>
+    <form class="search-page-form" action="./search.html" data-search-form>
+      <input type="search" name="q" placeholder="输入关键词" data-search-input>
+      <button type="submit">搜索</button>
+    </form>
+  </section>
+  <section class="content-section">
+    <div class="section-heading">
+      <div>
+        <span class="eyebrow">Results</span>
+        <h2 data-search-title>搜索结果</h2>
+      </div>
+    </div>
+    <div class="movie-grid four" data-search-results></div>
+    <div class="empty-state" data-search-empty>输入关键词即可开始查找影片</div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="site-logo" href="./index.html" aria-label="日韩影视网">
+          <span class="logo-mark">影</span>
+          <span class="logo-text">日韩影视网</span>
+        </a>
+      <p>在线免费观看经典日韩电影，感受不一样的视听盛宴，带你走进每一个动人的故事世界。提供最新最全的日韩电视剧、电影、综艺节目高清免费播放</p>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./rankings.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+      <a href="./category-visual-feast.html">视听盛宴</a><a href="./category-story-world.html">动人故事</a><a href="./category-new-release.html">年度新片</a><a href="./category-classic-light.html">经典回看</a><a href="./category-suspense-night.html">悬疑夜场</a><a href="./category-romance-comedy.html">爱情喜剧</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 日韩影视网 · 高清影视内容推荐</div>
+</footer>
+<script src="./assets/js/site.js" defer></script>
+<script src="./assets/js/search-data.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

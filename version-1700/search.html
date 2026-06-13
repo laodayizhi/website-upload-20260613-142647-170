@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索 - 欧美在线</title>
+  <meta name="description" content="免费欧美在线视频站内搜索，支持按片名、年份、地区、类型、标签查找高清电影和剧集。">
+  <meta name="keywords" content="搜索,免费欧美视频,在线视频,高清视频,免费欧美视频,在线视频,欧美电影,高清视频,在线观看,免费播放,欧美剧集">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="page-shell">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="欧美在线">
+      <span class="brand-mark">欧</span>
+      <span class="brand-text">
+        <span class="brand-name">欧美在线</span>
+        <span class="brand-subtitle">高清影视免费视频在线观看</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a class="nav-link " href="./index.html">首页</a><a class="nav-link " href="./categories.html">分类</a><a class="nav-link " href="./rank.html">热播榜</a><a class="nav-link is-active" href="./search.html">搜索</a>
+      <div class="nav-dropdown">
+        <button class="nav-drop-button" type="button">频道</button>
+        <div class="nav-drop-menu">
+          <a href="./category-europe-us-movies.html">欧美电影</a><a href="./category-europe-us-series.html">欧美剧集</a><a href="./category-action-adventure.html">动作冒险</a><a href="./category-sci-fi-mystery.html">科幻悬疑</a><a href="./category-romance-drama.html">爱情剧情</a><a href="./category-comedy-life.html">喜剧生活</a><a href="./category-crime-thriller.html">犯罪惊悚</a><a href="./category-history-war.html">历史战争</a><a href="./category-animation-family.html">动画家庭</a><a href="./category-variety-documentary.html">综艺纪实</a>
+        </div>
+      </div>
+    </nav>
+    <form class="top-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索电影..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" hidden>
+    <form class="mobile-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索电影..." autocomplete="off">
+      <button type="submit">搜索</button>
+    </form>
+    <nav class="mobile-nav" aria-label="移动导航">
+      <a class="mobile-link " href="./index.html">首页</a><a class="mobile-link " href="./categories.html">分类</a><a class="mobile-link " href="./rank.html">热播榜</a><a class="mobile-link is-active" href="./search.html">搜索</a>
+      <div class="mobile-section-title">频道</div>
+      <a class="mobile-sub-link" href="./category-europe-us-movies.html">欧美电影</a><a class="mobile-sub-link" href="./category-europe-us-series.html">欧美剧集</a><a class="mobile-sub-link" href="./category-action-adventure.html">动作冒险</a><a class="mobile-sub-link" href="./category-sci-fi-mystery.html">科幻悬疑</a><a class="mobile-sub-link" href="./category-romance-drama.html">爱情剧情</a><a class="mobile-sub-link" href="./category-comedy-life.html">喜剧生活</a><a class="mobile-sub-link" href="./category-crime-thriller.html">犯罪惊悚</a><a class="mobile-sub-link" href="./category-history-war.html">历史战争</a><a class="mobile-sub-link" href="./category-animation-family.html">动画家庭</a><a class="mobile-sub-link" href="./category-variety-documentary.html">综艺纪实</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero compact-hero">
+  <div>
+    <div class="crumbs"><a href="./index.html">首页</a><span>›</span><strong>搜索</strong></div>
+    <span class="section-kicker">Search</span>
+    <h1>站内搜索</h1>
+    <p>输入影片名、年份、地区、类型或标签，快速查找可观看的影片详情页。</p>
+  </div>
+</section>
+<section class="section-wrap search-page" data-search-page>
+  <form class="search-panel" action="./search.html" method="get">
+    <input type="search" name="q" data-search-input placeholder="搜索电影、剧集、标签或年份" autocomplete="off">
+    <button type="submit">搜索</button>
+  </form>
+  <div class="search-status" data-search-status>输入关键词开始查找影片。</div>
+  <div class="movie-grid" data-search-results></div>
+  <div class="search-fallback">
+    <h2>按频道浏览</h2>
+    <div class="fallback-links"><a href="./category-europe-us-movies.html">欧美电影</a><a href="./category-europe-us-series.html">欧美剧集</a><a href="./category-action-adventure.html">动作冒险</a><a href="./category-sci-fi-mystery.html">科幻悬疑</a><a href="./category-romance-drama.html">爱情剧情</a><a href="./category-comedy-life.html">喜剧生活</a><a href="./category-crime-thriller.html">犯罪惊悚</a><a href="./category-history-war.html">历史战争</a><a href="./category-animation-family.html">动画家庭</a><a href="./category-variety-documentary.html">综艺纪实</a></div>
+  </div>
+</section>
+<script src="./assets/search-data.js"></script>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">欧</span>
+      <div>
+        <strong>欧美在线</strong>
+        <p>高清影视免费视频在线观看</p>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./rank.html">热播榜</a>
+      <a href="./search.html">搜索</a>
+      <a href="./category-europe-us-movies.html">欧美电影</a><a href="./category-europe-us-series.html">欧美剧集</a><a href="./category-action-adventure.html">动作冒险</a><a href="./category-sci-fi-mystery.html">科幻悬疑</a><a href="./category-romance-drama.html">爱情剧情</a><a href="./category-comedy-life.html">喜剧生活</a>
+    </div>
+    <p class="footer-copy">© 2026 欧美在线. 高清内容持续更新。</p>
+  </div>
+</footer>
+<script src="./assets/app.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
